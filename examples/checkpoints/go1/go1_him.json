@@ -1,0 +1,32 @@
+{
+    "onnx": {
+        "meta": {
+            "in_keys": [
+                "obs_history"
+            ],
+            "out_keys": [
+                "action"
+            ],
+            "in_shapes": [
+                [
+                    [
+                        1,
+                        270
+                    ]
+                ]
+            ]
+        },
+        "path": "./examples/checkpoints/go1/go1_him.onnx"
+    },
+    "obs_config": {
+        "obs_history": [
+            {
+                "name": "HIMLocoObs",
+                "joint_names": "isaac"
+            }
+        ]
+    },
+    "action_scale": 0.25,
+    "stiffness": 40.0,
+    "damping": 1.0
+}
